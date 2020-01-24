@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>Hexo 테마 커스터마이징 | 봉치공간</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Hexo 테마를 커스터마이징하다.그렇다. 내 맘에 들지 않았다. 이 테마 저 테마 깔아봐도 몇프로 부족했다.내 맘대로 해보고싶었지만 generate하면 public에 수정했던 css들이 날라가버려 적용이 안되더라.답답한 맘에 hexo theme를 구조를 뜯어보고 고치기로 했다.이 또한 웹개발자에겐 넘나리 쉽고 간편한 일일진 모르지만, 내 나름 힘든 과정이었">
+<meta name="keywords" content="hexo,hexo theme,hexo customizing">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo 테마 커스터마이징">
+<meta property="og:url" content="https://bomee88.github.io/2018/04/10/hexo-customizing/index.html">
+<meta property="og:site_name" content="봉치공간">
+<meta property="og:description" content="Hexo 테마를 커스터마이징하다.그렇다. 내 맘에 들지 않았다. 이 테마 저 테마 깔아봐도 몇프로 부족했다.내 맘대로 해보고싶었지만 generate하면 public에 수정했던 css들이 날라가버려 적용이 안되더라.답답한 맘에 hexo theme를 구조를 뜯어보고 고치기로 했다.이 또한 웹개발자에겐 넘나리 쉽고 간편한 일일진 모르지만, 내 나름 힘든 과정이었">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="https://bomee88.github.io/img/post/20180410-1.jpg">
+<meta property="og:image" content="https://bomee88.github.io/img/post/20180410-2.jpg">
+<meta property="og:image" content="https://bomee88.github.io/img/post/20180410-3.jpg">
+<meta property="og:image" content="https://bomee88.github.io/img/post/20180410-4.jpg">
+<meta property="og:image" content="https://bomee88.github.io/img/post/20180410-5.jpg">
+<meta property="og:image" content="https://bomee88.github.io/img/post/20180417-1.jpg">
+<meta property="og:image" content="https://bomee88.github.io/img/post/20180417-2.jpg">
+<meta property="og:image" content="https://bomee88.github.io/img/post/20180417-3.jpg">
+<meta property="og:image" content="https://bomee88.github.io/img/post/20180417-4.jpg">
+<meta property="og:image" content="https://bomee88.github.io/img/post/20180417-5.jpg">
+<meta property="og:updated_time" content="2020-01-24T00:09:40.377Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo 테마 커스터마이징">
+<meta name="twitter:description" content="Hexo 테마를 커스터마이징하다.그렇다. 내 맘에 들지 않았다. 이 테마 저 테마 깔아봐도 몇프로 부족했다.내 맘대로 해보고싶었지만 generate하면 public에 수정했던 css들이 날라가버려 적용이 안되더라.답답한 맘에 hexo theme를 구조를 뜯어보고 고치기로 했다.이 또한 웹개발자에겐 넘나리 쉽고 간편한 일일진 모르지만, 내 나름 힘든 과정이었">
+<meta name="twitter:image" content="https://bomee88.github.io/img/post/20180410-1.jpg">
+  
+    <link rel="alternate" href="/atom.xml" title="봉치공간" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">봉치공간</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://bomee88.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-hexo-customizing" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/04/10/hexo-customizing/" class="article-date">
+  <time datetime="2018-04-10T00:18:12.000Z" itemprop="datePublished">2018-04-10</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/hexo/">hexo</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Hexo 테마 커스터마이징
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Hexo-테마를-커스터마이징하다"><a href="#Hexo-테마를-커스터마이징하다" class="headerlink" title="Hexo 테마를 커스터마이징하다."></a>Hexo 테마를 커스터마이징하다.</h1><p>그렇다. 내 맘에 들지 않았다. 이 테마 저 테마 깔아봐도 몇프로 부족했다.<br>내 맘대로 해보고싶었지만 generate하면 public에 수정했던 css들이 날라가버려 적용이 안되더라.<br>답답한 맘에 hexo theme를 구조를 뜯어보고 고치기로 했다.<br>이 또한 웹개발자에겐 넘나리 쉽고 간편한 일일진 모르지만, 내 나름 힘든 과정이었음으로<br>누군가에게 도움이 되고자 포스팅 해보려한다.</p>
+<p><br></p>
+<h2 id="1-hexo의-clean-blog테마를-먼저-깔아보자"><a href="#1-hexo의-clean-blog테마를-먼저-깔아보자" class="headerlink" title="1. hexo의 clean-blog테마를 먼저 깔아보자."></a>1. hexo의 clean-blog테마를 먼저 깔아보자.</h2><p>hexo를 깔면 기본으로 landscape라는 테마가 깔려있다.</p>
+<p><img src="/img/post/20180410-1.jpg" alt="landscape theme 화면 뷰"></p>
+<p>음~ 너무나 맘에 들지 않는다. 나름 반응형까지 지원하는 테마지만 우리가 원하는<br>깔끔하고 시원한 테마는 아닌것 같다. 그래서 커스터마이징하기 수월하게끔 깨끗한 clean-blog를 일단 깔아보았다.</p>
+<p>방법은 너무나도 친절하게 정리해주신 아래 블로거님의 스텝을 따라하도록한다.</p>
+<blockquote>
+<p><a href="https://kdydesign.github.io/2017/07/07/hexo-themes/" target="_blank" rel="noopener">Hexo와 Github page로 만든 블로그에 Hexo 테마 적용하기 -Dev DY님</a></p>
+</blockquote>
+<p><img src="/img/post/20180410-2.jpg" alt="clean-blog 테마 화면 뷰"></p>
+<p>위와 같은 모습으로 설치된다.<br>그치만 나는 사이드메뉴도 넣고 싶었고 추후 프로필 페이지도 따로 멋있게 만들고 싶었다.<br>그러기 위해선 hexo의 구조부터 알아야 했다.</p>
+<p><br></p>
+<h2 id="2-hexo-구조를-파악하자"><a href="#2-hexo-구조를-파악하자" class="headerlink" title="2. hexo 구조를 파악하자."></a>2. hexo 구조를 파악하자.</h2><p><img src="/img/post/20180410-3.jpg" alt="헥소 구조"></p>
+<p>일단 hexo를 설치한 깃허브페이지의 최상단의 폴더를 보면 위와 같다. 여기서 눈여겨 봐야할 폴더와 파일은.. </p>
+<ol>
+<li>public : 이 폴더는 다른 폴더안에 있는 theme와 source 및 congif파일들이 generate 된 뒤 생성되는 정적파일들이 모이는 곳이다.</li>
+<li>source : 우리가 작성할 post가 들어가는 폴더이다. post안에 작성한 tags, categorise 등이 source안에 구분되어 데이터로 쌓인다.</li>
+<li>theme : 내가 다운로드한 테마가 담겨있는 폴더이다. 기본테마인 landscape와 clean-blog가 담겨 있을 것이다.</li>
+<li>＿config.yml : github page의 초기 설정값들이 담겨있다. 여기에 작성한 것들을 함수화해서 generate시 각 파일에 흩뿌려 public을 생성한다.</li>
+</ol>
+<blockquote>
+<p>제가 이해한대로 작성했습니다. 틀린 것이나 오류가 있다면 댓글부탁드립니다.</p>
+</blockquote>
+<p>public은 아무리 수정해대도 결국 generate하면 다 날라가 버린다.<br>그렇다면 theme안의 어떤 것들이 정적파일로 생성되어 public에 들어간단 의민데<br>그럼 theme는 어떤 구조를 띄고 있는지 살펴봐보자.</p>
+<p><img src="/img/post/20180410-4.jpg" alt="헥소 테마 구조"></p>
+<blockquote>
+<p>languages는 config에서 언어를 뭘로 설정하느냐에따라 보여질 문구가 들어있는 것 같다. 한글은 없으므로 config의 언어설정은 그냥 en하면 된다. README에는 이 테마의 config를 작성하는 방법 및 포스트시 추가 가능한 내용들이 나와있다.</p>
+</blockquote>
+<ol>
+<li>layout : 홈페이지의 각 부분을 따로따로 떼어논 .ejs(html형식) 파일들이 있다.</li>
+<li>source : css와 img가 있는데, css는 stylus라는 프리프로세서를 통해 작성해놨다. 이또한 해당 부분에 따라 나눠져있다. img는 해당 (배경)이미지들이 존재한다.</li>
+<li>＿config.yml : 아까 상위에 있던 config와는 또 다른 config파일이다. 테마 안의 좀더 상세한 초기설정들을 할 수 있다. (작성법은 README를 참고.)</li>
+</ol>
+<p><br></p>
+<h2 id="3-커스터마이징에-필요한-환경을-구성하자"><a href="#3-커스터마이징에-필요한-환경을-구성하자" class="headerlink" title="3. 커스터마이징에 필요한 환경을 구성하자."></a>3. 커스터마이징에 필요한 환경을 구성하자.</h2><p>위와 같은 구조이라고 했을 때, 나(혹은 퍼블리셔)의 기본 작업방식으로 작업하려면 먼저 html을 작성하고 css를 입히는 것 처럼 layout을 먼저 손봐야 한다.<br>(이 작업의 사전 지식이 되는 ‘웹의 기본 구조 및 형식’은 추후 포스팅 한 뒤 링크를 달아 놓겠다.)<br>나는 메뉴바 부분을 제일 먼저 수정하고 싶었으므로 menu가 들어있는 html의 조각을 찾아갔다.<br>찾는 방법은 아래와 같다.<br>먼저 html의 head와 body를 비롯한 모든 껍데기를 감싸고 있는 ‘myBlog/themes/clean-blog/layout/layout.ejs’를 연다.</p>
+<figure class="highlight html"><figcaption><span>layout.ejs</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line">&lt;html &lt;% if(config.language) &#123; %&gt;lang="&lt;%= config.language %&gt;"&lt;% &#125; else &#123; %&gt;lang="en"&lt;% &#125;%&gt;&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- Head tag --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">%-</span> <span class="attr">partial</span>('<span class="attr">_partial</span>/<span class="attr">head</span>') %&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">&lt;!-- Menu --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">%-</span> <span class="attr">partial</span>('<span class="attr">_partial</span>/<span class="attr">menu</span>') %&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">&lt;!-- Main Content --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">%-</span> <span class="attr">body</span> %&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">&lt;!-- Footer --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">%-</span> <span class="attr">partial</span>('<span class="attr">_partial</span>/<span class="attr">footer</span>') %&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">&lt;!-- After footer scripts --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">%-</span> <span class="attr">partial</span>('<span class="attr">_partial</span>/<span class="attr">after-footer</span>') %&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>웹의 구조를 간단히 설명하자면 html(현재 표준은 html5)이라는 법칙안에 머리(head)와 몸(body)으로 구성 되어있다. 머리(head) 안에는 그 정신/생각이라 할 수 있는 meta tag들이 담겨있고 이것들은 눈(web 화면상)에 보이지는 않으나 이 웹페이지를 정의하고, 선언하는 역할을 한다.<br>몸은 눈에 보여지는 부분이고 여기에 입력하는 모든 것은 웹 화면상에 나타난다. css란 이 몸에 옷을 입히는 일을 말하고 javascript/j-query등은 옷을 입힌 몸에 동력을 불어 넣는 일을 한다.</p>
+</blockquote>
+<p>보다시피 전체 html구조가 나온다. 해당하는 부분이 각 ejs파일들로 인클루드 처리되어 있는 것 같다.<br>내가 고치려고 하는 menu의 경로도 확인 가능하다.<br>‘myBlog/themes/clean-blog/layout/＿partial/menu.ejs’를 열어보자.</p>
+<p><img src="/img/post/20180410-5.jpg" alt="menu"></p>
+<figure class="highlight html"><figcaption><span>menu.ejs_원본</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- Navigation --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">nav</span> <span class="attr">class</span>=<span class="string">"navbar navbar-default navbar-custom navbar-fixed-top"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"container-fluid"</span>&gt;</span></span><br><span class="line">		<span class="comment">&lt;!-- Brand and toggle get grouped for better mobile display --&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"navbar-header page-scroll"</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">button</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">class</span>=<span class="string">"navbar-toggle"</span> <span class="attr">data-toggle</span>=<span class="string">"collapse"</span> <span class="attr">data-target</span>=<span class="string">"#bs-example-navbar-collapse-1"</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"sr-only"</span>&gt;</span>Toggle navigation<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"icon-bar"</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"icon-bar"</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"icon-bar"</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">a</span> <span class="attr">class</span>=<span class="string">"navbar-brand"</span> <span class="attr">href</span>=<span class="string">"&lt;%- config.root %&gt;"</span>&gt;</span><span class="tag">&lt;<span class="name">%-</span> <span class="attr">theme.menu_title</span> || <span class="attr">config.title</span> || "" %&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">		<span class="comment">&lt;!-- Collect the nav links, forms, and other content for toggling --&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"collapse navbar-collapse"</span> <span class="attr">id</span>=<span class="string">"bs-example-navbar-collapse-1"</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">ul</span> <span class="attr">class</span>=<span class="string">"nav navbar-nav navbar-right"</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">%</span> <span class="attr">for</span> (<span class="attr">var</span> <span class="attr">i</span> <span class="attr">in</span> <span class="attr">theme.menu</span>)&#123; %&gt;</span></span><br><span class="line">					<span class="tag">&lt;<span class="name">li</span>&gt;</span></span><br><span class="line">						<span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"&lt;%- theme.menu[i].url ? url_for(theme.menu[i].url) : url_for(theme.menu[i]) %&gt;"</span>&gt;</span></span><br><span class="line">							<span class="tag">&lt;<span class="name">%</span> <span class="attr">if</span> (<span class="attr">theme.menu</span>[<span class="attr">i</span>]<span class="attr">.icon</span>) &#123; %&gt;</span></span><br><span class="line">								<span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fa fa-&lt;%= theme.menu[i].icon %&gt; fa-stack-2x"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">							<span class="tag">&lt;<span class="name">%</span> &#125; <span class="attr">else</span> &#123; %&gt;</span></span><br><span class="line">								<span class="tag">&lt;<span class="name">%=</span> <span class="attr">i</span> %&gt;</span></span><br><span class="line">							<span class="tag">&lt;<span class="name">%</span> &#125; %&gt;</span></span><br><span class="line">						<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">					<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">%</span> &#125; %&gt;</span></span><br><span class="line">			<span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">		<span class="comment">&lt;!-- /.navbar-collapse --&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="comment">&lt;!-- /.container --&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">nav</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>위와 같은 코딩을 볼 수 있다.<br>&lt;% %&gt; 에 해당하는 내용은 EJS* 언어임으로 건드리지 않는게 좋다. </p>
+<blockquote>
+<p><a href="http://www.embeddedjs.com/" target="_blank" rel="noopener">EJS</a> : EJS는 원래 JavaScriptMVC의 일부였던 클라이언트 측 템플릿 언어이며 현재 DoneJS로 대체되었다고 한다. </p>
+</blockquote>
+<p>일부 코딩을 바꿔 아래와 같이 수정해봤다.<br><figure class="highlight html"><figcaption><span>menu.ejs_수정</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- Navigation --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"custom-nav"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"menu-icon"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">button</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"bar"</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"bar"</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"bar"</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span>			</span><br><span class="line">		<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">a</span> <span class="attr">class</span>=<span class="string">"logo"</span> <span class="attr">href</span>=<span class="string">"&lt;%- config.root %&gt;"</span>&gt;</span><span class="tag">&lt;<span class="name">%-</span> <span class="attr">theme.menu_title</span> || <span class="attr">config.title</span> || "" %&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span>	</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"left-side"</span> <span class="attr">id</span>=<span class="string">"bs-example-navbar-collapse-1"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">button</span> <span class="attr">class</span>=<span class="string">"close"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"bar"</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"bar"</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"intro"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"/img/profile.jpg"</span> <span class="attr">alt</span>=<span class="string">"내사진"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"mailto:bomee88@naver.com"</span>&gt;</span><span class="tag">&lt;<span class="name">strong</span>&gt;</span>@봉치<span class="tag">&lt;/<span class="name">strong</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span>Front-end개발, 웹기획, 웹디자인까지 호기심많은 UI개발자입니다.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">%</span> <span class="attr">for</span> (<span class="attr">var</span> <span class="attr">i</span> <span class="attr">in</span> <span class="attr">theme.menu</span>)&#123; %&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">li</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"&lt;%- theme.menu[i].url ? url_for(theme.menu[i].url) : url_for(theme.menu[i]) %&gt;"</span>&gt;</span></span><br><span class="line">					<span class="tag">&lt;<span class="name">%</span> <span class="attr">if</span> (<span class="attr">theme.menu</span>[<span class="attr">i</span>]<span class="attr">.icon</span>) &#123; %&gt;</span></span><br><span class="line">						<span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fa fa-&lt;%= theme.menu[i].icon %&gt; fa-stack-2x"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">					<span class="tag">&lt;<span class="name">%</span> &#125; <span class="attr">else</span> &#123; %&gt;</span></span><br><span class="line">						<span class="tag">&lt;<span class="name">%=</span> <span class="attr">i</span> %&gt;</span></span><br><span class="line">					<span class="tag">&lt;<span class="name">%</span> &#125; %&gt;</span></span><br><span class="line">				<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">%</span> &#125; %&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>기존의 navbar, navbar-default, navbar-custom, navbar-fixed-top 등의 클래스명은 부트스트랩의 일환이므로 css 중복을 방지하기 위해 과감히 삭제하고<br>새로운 클래스명 ‘custom-nav’를 사용해 내가 원하는 css와 js를 입힐 것이다.<br>그럼 이제 css와 js를 커스터마이징해보자.</p>
+<p>‘myblog/public’으로 들어가보면 css와 js폴더가 존재한다.</p>
+<p><img src="/img/post/20180417-1.jpg" alt></p>
+<p>거기에 각각의 customizing.css, customizing.js를 만들어 넣자.</p>
+<p><img src="/img/post/20180417-2.jpg" alt><br><img src="/img/post/20180417-3.jpg" alt></p>
+<p>이제 우리가 만든 customizing파일들을 html에 링크를 연결해야한다.<br>아까 껍데기 부분이었던 ‘myBlog/themes/clean-blog/layout/layout.ejs’를 다시 확인해보자.</p>
+<figure class="highlight html"><figcaption><span>layout.ejs</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line">&lt;html &lt;% if(config.language) &#123; %&gt;lang="&lt;%= config.language %&gt;"&lt;% &#125; else &#123; %&gt;lang="en"&lt;% &#125;%&gt;&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- Head tag --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">%-</span> <span class="attr">partial</span>('<span class="attr">_partial</span>/<span class="attr">head</span>') %&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">&lt;!-- Menu --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">%-</span> <span class="attr">partial</span>('<span class="attr">_partial</span>/<span class="attr">menu</span>') %&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">&lt;!-- Main Content --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">%-</span> <span class="attr">body</span> %&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">&lt;!-- Footer --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">%-</span> <span class="attr">partial</span>('<span class="attr">_partial</span>/<span class="attr">footer</span>') %&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">&lt;!-- After footer scripts --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">%-</span> <span class="attr">partial</span>('<span class="attr">_partial</span>/<span class="attr">after-footer</span>') %&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>css는 html의 head부분에 존재한다.<br>그렇다면 partial의 Head tag라고 표기된 부분의 ‘＿partial/head.ejs’파일을 열면 되겠다.</p>
+<p><img src="/img/post/20180417-4.jpg" alt></p>
+<p>다른 메타태그부분들이 즐비하지만 우리가 눈여겨 봐야 할 곳은 빨간 사각형인 custom css부분이다.<br>위의 사진과 같이 customizing.css 를 link해준다.</p>
+<p>그 다음은 js다. js는 보통 head에 위치하기도 하지만, html이 모두 로드된 뒤에 자연스럽게 js가 돌아가도록 하기위해 body제일 아랫부분에 위치하기도 한다. head에 js가 없었으니 body의 아랫부분인 after-footer.ejs를 확인해보자.</p>
+<p><img src="/img/post/20180417-5.jpg" alt></p>
+<p>역시나 존재하는구나!<br>우리의 customizing.js를 삽입해주고 저장하고 닫는다.</p>
+<p>이제 드디어 커스터마이징 할 수 있는 모든 환경을 만들어 놓았다.<br>위의 예시는 menu뿐이었지만 그 외에 여러분이 원하는 어떤 영역이든 layout에서 확인 한 뒤<br>html(.ejs)를 고치고 customizing.css에서 css를 입히고 customizing.js에서 동작을 만들어주면 된다.<br>css와 js를 다룰 줄 아는 사람이라면 누구든지 hexo를 커스터마이징 할 수 있을 것이다.</p>
+<p>여기까지로 hexo customizing 포스팅은 마치고..<br>다음 포스팅 부터는 필자의 주된 영역인 웹표준, 반응형 웹, html, css, j-query 등에 대해서 다뤄보도록 하겠다.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://bomee88.github.io/2018/04/10/hexo-customizing/" data-id="ck5rfoeb90003o3qr3lt2d1y6" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo-customizing/">hexo customizing</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo-theme/">hexo theme</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2018/04/18/web-publishing/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          웹 퍼블리싱의 이해 - 1.웹표준, 웹접근성, 반응형웹이란?
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2018/04/05/first-post/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">아무나 깃허브 페이지 만들기</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/github/">github</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/hexo/">hexo</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/웹-퍼블리싱의-이해/">웹 퍼블리싱의 이해</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/">git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/github/">github</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/github-page/">github_page</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo-customizing/">hexo customizing</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo-theme/">hexo theme</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/반응형웹/">반응형웹</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/웹접근성/">웹접근성</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/웹표준/">웹표준</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/github/" style="font-size: 20px;">github</a> <a href="/tags/github-page/" style="font-size: 10px;">github_page</a> <a href="/tags/hexo/" style="font-size: 20px;">hexo</a> <a href="/tags/hexo-customizing/" style="font-size: 10px;">hexo customizing</a> <a href="/tags/hexo-theme/" style="font-size: 10px;">hexo theme</a> <a href="/tags/반응형웹/" style="font-size: 10px;">반응형웹</a> <a href="/tags/웹접근성/" style="font-size: 10px;">웹접근성</a> <a href="/tags/웹표준/" style="font-size: 10px;">웹표준</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">January 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">May 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/01/24/generate-and-deploy-text/">generate and deploy text</a>
+          </li>
+        
+          <li>
+            <a href="/2018/05/03/깃허브로-다른컴퓨터에서-hexo블로그-수정하기/">깃허브로 다른컴퓨터에서 hexo블로그 수정하기</a>
+          </li>
+        
+          <li>
+            <a href="/2018/04/18/web-publishing/">웹 퍼블리싱의 이해 - 1.웹표준, 웹접근성, 반응형웹이란?</a>
+          </li>
+        
+          <li>
+            <a href="/2018/04/10/hexo-customizing/">Hexo 테마 커스터마이징</a>
+          </li>
+        
+          <li>
+            <a href="/2018/04/05/first-post/">아무나 깃허브 페이지 만들기</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 봉치<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
