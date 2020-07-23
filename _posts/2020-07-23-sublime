@@ -12,5 +12,5 @@ html, css, js까지 자동으로 정렬해주는 Prettify 를 설치해보자.
    
     
 이제 원하는 부분을 드래그 한 뒤에   
-ctrl+shift+l을 눌러주면 자동으로 정렬이 된다.
+ctrl+shift+H을 눌러주면 자동으로 정렬이 된다.
    
