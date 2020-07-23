@@ -1,0 +1,16 @@
+---
+title: "서브라임에서 자동 텍스트 정렬 패키지 설치"
+date: 2020-07-23
+categories: sublime pakage
+---
+   
+html, css, js까지 자동으로 정렬해주는 Prettify 를 설치해보자.   
+   
+> 1. Sublime Text에서 Ctrl + Shift + P
+> 2. "Package Control: Install Package" 클릭
+> 3. "HTML-CSS-JS Prettify"클릭
+   
+    
+이제 원하는 부분을 드래그 한 뒤에   
+ctrl+shift+l을 눌러주면 자동으로 정렬이 된다.
+   
