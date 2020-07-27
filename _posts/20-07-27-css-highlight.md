@@ -76,7 +76,12 @@ div:hover .highlight:after{
 }
 ```
    
-> <a href='https://codepen.io/bomee/pen/PoZgxer'>codepen으로 바로보기</a>
+<p class="codepen" data-height="265" data-theme-id="light" data-default-tab="css,result" data-user="bomee" data-slug-hash="PoZgxer" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="css-highlight-2">
+  <span>See the Pen <a href="https://codepen.io/bomee/pen/PoZgxer">
+  css-highlight-2</a> by bomee (<a href="https://codepen.io/bomee">@bomee</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 이렇게 써주면 css만으로도 마우스 올렸을 때 인터렉티브한 모션을 만들 수 있다.    
 잘 안된다면 아래 첨부한 코드펜 소스를 뜯어보도록 하자.   
