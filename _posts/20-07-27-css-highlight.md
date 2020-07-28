@@ -4,9 +4,13 @@ date: 2020-07-20
 categories: css highlight
 ---
 요즘은 css로 약간의 아날로그 감성을 나타내는게 대세인듯 하다.  
+아래와 같이 노트에 형광펜을 그은 듯한 시안을 많이 받는다.   
+   
 <img src="https://bomee88.github.io//images/200727_1.png" alt="highlight 이미지"/>   
-이런식으로 노트에 형광펜을 그은 듯한 시안을 많이 받는다.   
-css로 밑줄을 넣는 방법은 크게 두가지이다.
+> 내가 받은 시안.png
+   
+그래서 오늘은 형광펜 같은 효과를 넣는 css를 만들어보자!   
+이런식으로 css로 밑줄을 넣는 방법은 크게 두가지이다.
       
 1. box-shadow 형식   
 첫번째로는 위의 이미지와도 같이 긴 글, 그리고 반응형이여서 글이      
@@ -22,12 +26,10 @@ css로 밑줄을 넣는 방법은 크게 두가지이다.
 위와같이 css에 .highlight 클래스를 만들어주고   
 html에서 원하는 부분에 span으로 감싸 highlight 클래스를 줘보자.   
 위의 사진과 같은 효과를 볼 수 있을 것이다.
-
-> <a href='https://codepen.io/bomee/pen/PoZgxer'>codepen으로 바로보기</a>
    
-2. :after 형식
+2. :after 형식   
 두번째로는 가상셀렉터인 after를 활용해서 넣는 방법이다.   
-이 방법은 제목글이나 짧은 문구에 highlight를 할때 유용하다.
+이 방법은 제목글이나 짧은 문구에 highlight를 할때 유용하다.   
    
 ```css
 .highlight:after{
