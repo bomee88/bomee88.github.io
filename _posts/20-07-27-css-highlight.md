@@ -19,7 +19,8 @@ categories: css highlight
 ```css
 .highlight{
   display: inline;
-  box-shadow: box-shadow: inset 0 -20px 0 #D9FCDB; /*-20px은 highlight의 두께*/
+  box-shadow: inset 0 -10px 0 #D9FCDB; 
+  /*-10px은 highlight의 두께*/
 }
 ```
    
