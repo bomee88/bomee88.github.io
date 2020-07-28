@@ -4,7 +4,7 @@ date: 2020-07-20
 categories: css highlight
 ---
 요즘은 css로 약간의 아날로그 감성을 나타내는게 대세인듯 하다.  
-<img src="/images/200727_1.png" alt="highlight 이미지"/>   
+<img src="https://bomee88.github.io//images/200727_1.png" alt="highlight 이미지"/>   
 이런식으로 노트에 형광펜을 그은 듯한 시안을 많이 받는다.   
 css로 밑줄을 넣는 방법은 크게 두가지이다.
       
