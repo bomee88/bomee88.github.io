@@ -9,7 +9,7 @@ categories: css gradient background
 그 중에서 오늘 해볼 것은     
 아래와 같은 시안을 받았을 때 svg가 아닌 css로 만들어 보는 것이다.      
     
-<img src="//images/20200730_1.png" alt="img"/>
+<img src="/images/20200730_1.png" alt="img"/>
    
 그라디언트는 원래 부드럽게 두가지 색을 믹스하는 것인데    
 비율을 잘 조절하면 섞이는 구간을 분리할 수 있다.   
