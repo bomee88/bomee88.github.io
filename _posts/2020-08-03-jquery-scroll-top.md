@@ -1,5 +1,5 @@
 ---
-title : "jQuery로 top값 찾기"
+title : "jQuery offset으로 scrollTop 이동하기"
 date : 2020-08-03
 categories : jQuery offset position scrollTop
 ---
