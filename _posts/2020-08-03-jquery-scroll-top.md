@@ -1,7 +1,7 @@
 ---
 title : "jQuery로 top값 찾기"
 date : 2020-08-03
-category : jQuery offset position scrollTop
+categories : jQuery offset position scrollTop
 ---
 
 jQuery를 사용하면서 자주 사용하는 top값 찾는 방법
