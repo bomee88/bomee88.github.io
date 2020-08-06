@@ -1,6 +1,6 @@
 ---
 title : "VSC (Visual Studio Code) 한글 패치하기"
-date : 2020-08-04
+date : 2020-08-05
 categories : vsc korean patch
 ---
 
