@@ -1,0 +1,70 @@
+---
+title : "[패캠올인원챌린지] 프론트엔드 개발자과정 day2 - 24강 Git & Github"
+date : 2020-08-12
+categories : pastcampus all-in-one-challenge day2 git github
+---
+
+# Git & Github
+Git은 버전관리툴이다. Github는 Git의 클라우드같은 개념이라고 보면 된다. 이에 대한 설명은 더 잘써놓은 블로그가 많기 때문에 생략하자. 여기에서는 자주쓰는 git용어들을 정리해 놓으려고 한다. 
+   
+# 자주 쓰는 커맨드용어
+```
+pwd //현재 폴더 위치
+ls //현재 폴더 안의 폴더 및 파일 보기
+ls -al //숨김 폴더까지 보기
+cd //~로 들어가기
+cd .. //상위폴더로 올라가기
+rm -rf 폴더이름/ //삭제
+```
+   
+# git 관리하기
+```
+git init //git 초기화
+git add README.md //README.md 파일 추가
+git add . //변경사항 모두 추가
+git git commit -m "README.md 추가" //설명글 작성
+git log //올라간 내용 확인
+```
+> 커밋은 의미있는 변동사항을 묶어서 만든다. 그래야 동료개발자가 확인하기에도 좋고, 미래의 내가 확인하기에도 (커밋을 보고 그 시점으로 복원할 수 있기 때문에)수월하다. 그냥 아무때나 하는 커밋은 의미있는 버전관리라고 할 수 없다...! ex) button click bug fixed 
+  
+> 커밋은 기차처럼 쌓인다. 커밋 그래프를 보면 진행상황을 한 눈에 볼 수 있다. 
+
+# git을 원격저장소(github)에 올리기
+1. github 웹에 로그인 해서 레포지토리 생성
+1. 내 컴퓨터에 폴더를 만들고 레포지토리와 연동하기
+```
+git remote add origin https~~ //연동
+git push origin master //푸시하기
+```
+* origin - 원격저장소를 의미 
+* master - 기본 브랜치
+
+  
+# 다른 사람이 만든 저장소 받아오기 (클론)
+1. 아래 소스와 같이 클론.
+1. 클론 한 뒤 폴더에서 파일 하나 생성해보고 add->commit->push 과정을 거쳐본다.
+1. github에서 제대로 올라갔는지 확인한다.
+1. 상대방은 내 업데이트를 pull해서 사용할 것이다. 
+```
+git clone https://github.com/ID/NAME.git //폴더 생성하며 클론하기
+git clone https://github.com/ID/NAME.git . //띄어쓰고 쩜하면 현재폴더에 클론하기
+```
+* 클론을 하면 원격 저장소의 코드를 내 컴터에 받아올 수 있다(.git도 자동으로 생긴다). 
+* 클론 받고 난 뒤 새로운 업데이트가 있다면 풀로 당겨올 수 있다. 
+* 수정 후 다시 푸쉬(권한이 있는 경우 가능)
+* 푸쉬 권한 주기 : github -> Settings -> Collaborators -> Add Collaborator
+
+# 원격저장소에서 업데이트 가져오기 (Pull)
+```
+git pull origin master
+```
+pull로 당겨오면 업데이트 된 부분이 바로 나온다. 찍어보고 싶으면 git log.
+
+# 마치면서
+마크다운 수업을 듣고 깃/깃헙 수업을 들으니 블로그의 완전체가 완성된 것 같은 기분.. 이제 무적이닷😌
+소스트리 GUI부터는 내일 들어야 할 것 같다. 왜냐면 조카를 봐줘야 되기 때문에.. 두시간째 유튜브 보여주는 중인데 이젠 안되겠당🤪 애엄마한테 혼날것같당 
+   
+오늘은 여기까지, 수강 모습은 아래에..
+![수강인증이미지](/images/200807-1.png)
+![수강인증이미지](/images/200807-2.jpeg)
+![수강인증이미지](/images/200807-3.jpeg)

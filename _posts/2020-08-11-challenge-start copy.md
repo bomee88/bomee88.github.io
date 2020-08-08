@@ -1,7 +1,7 @@
 ---
-title : "[패캠올인원챌린지] 프론트엔드 개발자과정 day2 - 38강 마크다운"
+title : "[패캠올인원챌린지] 프론트엔드 개발자과정 day1 - 38강 마크다운"
 date : 2020-08-06
-categories : pastcampus all-in-one-challenge day2 markdown
+categories : pastcampus all-in-one-challenge day1 markdown
 ---
 
 # 마크다운이란?
