@@ -1,10 +1,12 @@
 ---
-title : "[패캠올인원챌린지] 프론트엔드 개발자과정 day3 - 24강 Git & Github (feat. GUI)"
+title : "[패캠올인원챌린지] 프론트엔드 개발자과정 day3 - 24강 Git & Github (GUI 소스트리)"
 date : 2020-08-12
-categories : pastcampus all-in-one-challenge day2 git github GUI
+categories : pastcampus all-in-one-challenge day2 git github GUI soucetree
 ---
-
-# Git GUI로 알아볼 내용
+# `소스트리`란 무엇인가?
+보통 git과 github를 사용하려면 커맨드창 (까만창)에서 작업해야 한다. 일일이 명령어를 외워야 푸쉬, 풀, 클론등이 가능했는데 이런 번거로움을 줄이고 비주얼적으로 버튼만 누르면 이런 기능들이 가능하게끔 프로그램으로 만들어 놓은 것이 소스트리이다. 게다가 변경된 사항도 비주얼적으로 표시해서 보여줘서 버전을 비교해보기에도 아주 유용하다.
+   
+# Git GUI `소스트리`로 알아볼 내용
 1. 소스트리로 로컬 저장소 추가
 1. add / commit 에 대해 stage개념과 함께 이해
 1. branch로 평행세계 나누기
@@ -13,11 +15,11 @@ categories : pastcampus all-in-one-challenge day2 git github GUI
 1. 예의바른 병합요청 (Pull request) 보내기
 1. 남의 저장소 통째로 복사하기 (Fork)
    
-# 소스트리 설치 및 확인
+# `소스트리` 설치 및 확인
 [소스트리 설치](https://www.sourcetreeapp.com/) <- 소스트리 사이트로 가서 다운로드 받고 실행 시켜준다.
 설치하면서 가입과 로그인을 동시에 진행한다. 소스트리 패널에 내가 작업하고있는 폴더를 끌어 넣으면 히스토리를 바로 볼 수 있다. 
    
-# 소스트리로 보는 git의 상태 
+# `소스트리`로 보는 git의 상태 
 git으로 추적하는 파일의 4가지 상태
 - untracked
     * 추적안됨
@@ -31,29 +33,23 @@ git으로 추적하는 파일의 4가지 상태
 커밋을 하면 `수정없음` 상태로 돌아가서 다시 파일을 수정할 수 있다.
 
 
-# git이  
+# `소스트리`에서 origin, master의 의미 
+>`origin`없이  `master`만 있는 것 : 내컴터에만 있는 것.   
+>`origin`, `master` 둘다 있는 것 : 깃헙과 내컴터에 모두 있는 것.   
 
+`master`만 있을 경우 상단에 `push`를 눌러서 origin에 올려준다. 
 
   
-# 다른 사람이 만든 저장소 받아오기 (클론)
-1. 아래 소스와 같이 클론.
-1. 클론 한 뒤 폴더에서 파일 하나 생성해보고 add->commit->push 과정을 거쳐본다.
-1. github에서 제대로 올라갔는지 확인한다.
-1. 상대방은 내 업데이트를 pull해서 사용할 것이다. 
+# branch 하기
+### 브랜치란?
+여러명이서 한 프로젝트를 작업하면 같은 소스를 동시에 수정할 수도 있다. 이럴 경우 가지를 나눠서 각자 갈라지는 것이다. 이 갈라져 나간 각자의 버전은 `브랜치`라고 부른다. 중심에 있는 브랜치는 `마스터브랜치`로 불리고 이것을 기점으로 a 브랜치, b 브랜치로 나누어졌다가 둘 중 버그 없는 (원하는) 브랜치를 마스터 브랜치로 합치면서 버전을 업데이트 해나간다.
+### 브랜치하기
+CLI에서는 간단하게 아래와 같이 써주면 된다.   
 ```
-git clone https://github.com/ID/NAME.git //폴더 생성하며 클론하기
-git clone https://github.com/ID/NAME.git . //띄어쓰고 쩜하면 현재폴더에 클론하기
+git branch
 ```
-* 클론을 하면 원격 저장소의 코드를 내 컴터에 받아올 수 있다(.git도 자동으로 생긴다). 
-* 클론 받고 난 뒤 새로운 업데이트가 있다면 풀로 당겨올 수 있다. 
-* 수정 후 다시 푸쉬(권한이 있는 경우 가능)
-* 푸쉬 권한 주기 : github -> Settings -> Collaborators -> Add Collaborator
-
-# 원격저장소에서 업데이트 가져오기 (Pull)
-```
-git pull origin master
-```
-pull로 당겨오면 업데이트 된 부분이 바로 나온다. 찍어보고 싶으면 git log.
+GUI(소스트리)에서는 branch버튼을 클릭한다.
+> 브랜치를 만들때 이름을 feat/main_page이런 식으로 폴더명을 지정해서 만들어주면 소스트리에서 브랜치를 볼때 폴더별로 볼 수 있어 편리하다.
 
 # 마치면서
 마크다운 수업을 듣고 깃/깃헙 수업을 들으니 블로그의 완전체가 완성된 것 같은 기분.. 이제 무적이닷😌
