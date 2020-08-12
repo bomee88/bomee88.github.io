@@ -1,12 +1,13 @@
 ---
-title : "24강 Git & Github (GUI 소스트리)"
-date : 2020-08-13
-categories : pastcampus day3 git github GUI soucetree
+title : "[패스트캠퍼스 수강 후기] 프론트엔드 인강 100% 환급 챌린지 3회차 미션 - 24강 Git & Github (GUI 소스트리)"
+date : 2020-08-12
+categories : pastcampus 
+tags : pastcampus all-in-one-challenge day3 git github GUI sourcetree
 ---
-# `소스트리`란 무엇인가?
+# 소스트리란 무엇인가?
 보통 git과 github를 사용하려면 커맨드창 (까만창)에서 작업해야 한다. 일일이 명령어를 외워야 푸쉬, 풀, 클론등이 가능했는데 이런 번거로움을 줄이고 비주얼적으로 버튼만 누르면 이런 기능들이 가능하게끔 프로그램으로 만들어 놓은 것이 소스트리이다. 게다가 변경된 사항도 비주얼적으로 표시해서 보여줘서 버전을 비교해보기에도 아주 유용하다.
    
-# Git GUI `소스트리`로 알아볼 내용
+# Git GUI 소스트리로 알아볼 내용
 1. 소스트리로 로컬 저장소 추가
 1. add / commit 에 대해 stage개념과 함께 이해
 1. branch로 평행세계 나누기
@@ -15,11 +16,11 @@ categories : pastcampus day3 git github GUI soucetree
 1. 예의바른 병합요청 (Pull request) 보내기
 1. 남의 저장소 통째로 복사하기 (Fork)
    
-# `소스트리` 설치 및 확인
+# 소스트리 설치 및 확인
 [소스트리 설치](https://www.sourcetreeapp.com/) <- 소스트리 사이트로 가서 다운로드 받고 실행 시켜준다.
 설치하면서 가입과 로그인을 동시에 진행한다. 소스트리 패널에 내가 작업하고있는 폴더를 끌어 넣으면 히스토리를 바로 볼 수 있다. 
    
-# `소스트리`로 보는 git의 상태 
+# 소스트리로 보는 git의 상태 
 git으로 추적하는 파일의 4가지 상태
 - untracked
     * 추적안됨
@@ -40,7 +41,7 @@ git으로 추적하는 파일의 4가지 상태
 ![step7](/images/200808-7.png)
 
 
-# `소스트리`에서 origin, master의 의미 
+# 소스트리에서 origin, master의 의미 
 >`origin`없이  `master`만 있는 것 : 내컴터에만 있는 것.   
 >`origin`, `master` 둘다 있는 것 : 깃헙과 내컴터에 모두 있는 것.   
 
@@ -124,6 +125,7 @@ VSC에서 아래 사진과 같은 곳을 눌러보면 git상태가 나온다. �
 소스트리 GUI 너무 좋다. 이렇게 눈에 보이니까 정말 쉽고 직관적이고 간단하고 이해가 잘된다. 그동안 CLI로 명령어 수십번 썼다 지웠다 반복했던 내가 바보처럼 느껴질 정도..ㅎㅎㅎ 아무튼 눈에 보이지 않는 git의 개념을 차근차근 문어와 고양이로 섬세하게 설명해주신 진유림 강사님께 소소한 감사의 인사를 올린다.😌
    
 오늘은 여기까지, 수강 모습은 아래에..
+(오늘 시청영상 24강 09~17까지)
 ![수강인증이미지](/images/200808-9.jpeg)
    
 프론트엔드 개발 올인원 패키지 with React Online. 👉 https://bit.ly/31Cf1hp
