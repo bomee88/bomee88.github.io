@@ -1,7 +1,7 @@
 ---
 title : "[패캠올인원챌린지] 프론트엔드 개발자과정 시작!"
 date : 2020-08-06
-categories : pastcampus all-in-one-challenge day1
+categories : fastcampus all-in-one-challenge day1
 ---
 
 ### 챌린지를 시작하기에 앞서
