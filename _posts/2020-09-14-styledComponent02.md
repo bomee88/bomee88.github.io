@@ -1,8 +1,8 @@
 ---
-title: "[패스트캠퍼스 수강 후기] 프론트엔드 인강 100% 환급 챌린지 35회차 미션 - 31강 styled components, Polished"
-date: 2020-09-13
+title: "[패스트캠퍼스 수강 후기] 프론트엔드 인강 100% 환급 챌린지 36회차 미션 - 31강 styled components, Polished"
+date: 2020-09-14
 categories: fastcampus
-tags: fastcampus all-in-one-challenge day35 react styled-components Polished
+tags: fastcampus all-in-one-challenge day36 react styled-components Polished
 ---
 
 # styled compoenets로 Button 만들기
