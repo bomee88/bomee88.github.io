@@ -19,9 +19,9 @@ css modules은 아래와 같은 상황에서 주로 많이 사용한다.
 
 이럴때 사용하는 것이므로 이번에는 영상만 시청하고 직접 실습은 나중에 필요할때 찾아서 해보는 것으로 하자.
 
-# styled compoenet
+# styled compoenets
 
-styled component는 스타일은 js형태로 넣는 것이다. 이런 형태를 css-in-js라고 하는데 이런 형태로 이루어진 css가 이것만 있는 것은 아니다.
+styled components는 스타일은 js형태로 넣는 것이다. 이런 형태를 css-in-js라고 하는데 이런 형태로 이루어진 css가 이것만 있는 것은 아니다.
 ![캡처](images/200913-1.png)  
 emotion도 많이 쓰이고 있긴 하다고 한다. 무튼 우리는 styled component를 배워볼 것인데 아래와 같은 형태로 이루어져 있다.
 ![캡처](/images/200913-2.png)  
@@ -126,8 +126,8 @@ huge가 ture일때 && 이하의 css속성을 가져오게끔 해야되는데 저
 ![리액트화면](/images/200913-3.png)
 
 오늘은 여기까지..  
-시청 영상 31강 04~06까지
+시청 영상 31강 07~08까지
 
-![수강인증이미지](/images/200912-3.jpeg)
+![수강인증이미지](/images/200913-6.jpeg)
 
 프론트엔드 개발 올인원 패키지 with React Online. 👉 https://bit.ly/31Cf1hp
