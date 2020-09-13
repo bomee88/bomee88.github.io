@@ -22,7 +22,7 @@ css modules은 아래와 같은 상황에서 주로 많이 사용한다.
 # styled compoenets
 
 styled components는 스타일은 js형태로 넣는 것이다. 이런 형태를 css-in-js라고 하는데 이런 형태로 이루어진 css가 이것만 있는 것은 아니다.
-![캡처](images/200913-1.png)  
+![캡처](/images/200913-1.png)  
 emotion도 많이 쓰이고 있긴 하다고 한다. 무튼 우리는 styled component를 배워볼 것인데 아래와 같은 형태로 이루어져 있다.
 ![캡처](/images/200913-2.png)  
 Tagged Template Literal방식으로 이루어져있는데 주로 백틱을 이용하여 쓰는 아래와 같은 형식은 많이 접했을 것이다. 이것은 Template Literal 방식이다.
